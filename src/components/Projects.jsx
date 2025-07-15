@@ -101,7 +101,7 @@ const Projects = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.2 }}
-          className="flex flex-wrap justify-center gap-4 mb-16"
+          className="flex flex-wrap justify-center gap-4 mb-28"
         >
           {filters.map((filter) => (
             <motion.button
@@ -143,7 +143,7 @@ const Projects = () => {
               >
                 <div className="relative group flex flex-col items-center">
                   {/* Floating Project Image with blurred gradient bg */}
-                  <div className="relative w-full flex justify-center -mt-16 z-20">
+                  <div className="relative w-full flex justify-center mt z-20">
                     <div className="absolute -inset-2 rounded-4xl blur-2xl bg-gradient-to-br from-blue-500/20 via-purple-600/20 to-pink-500/20 z-0" />
                     <motion.img
                       src={project.image}
