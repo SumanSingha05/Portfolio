@@ -8,11 +8,11 @@ const Skills = () => {
       icon: <Globe className="w-7 h-7" />,
       color: "from-blue-400 to-blue-500",
       skills: [
-        { name: "React", level: 95, icon: "⚛️" },
-        { name: "JavaScript", level: 90, icon: "🇯‌🇸‌" },
-        { name: "TypeScript", level: 80, icon: "📘" },
-        { name: "Tailwind CSS", level: 90, icon: "🎨" },
-        { name: "Next.js", level: 60, icon: "⚡" },
+        { name: "React", level: 95,  },
+        { name: "JavaScript", level: 90,  },
+        { name: "TypeScript", level: 80,  },
+        { name: "Tailwind CSS", level: 90,  },
+        { name: "Next.js", level: 60,  },
       ]
     },
     {
@@ -20,10 +20,10 @@ const Skills = () => {
       icon: <Database className="w-7 h-7" />,
       color: "from-green-400 to-[#006A4E]",
       skills: [
-        { name: "Node.js", level: 90, icon: "🟢" },
-        { name: "Express.js", level: 85, icon: "🐍" },
-        { name: "PostgreSQL", level: 80, icon: "🐘" },
-        { name: "MongoDB", level: 82, icon: "🍃" },
+        { name: "Node.js", level: 90, },
+        { name: "Express.js", level: 85, },
+        { name: "PostgreSQL", level: 80,  },
+        { name: "MongoDB", level: 82,  },
         // { name: "GraphQL", level: 80, icon: "🔷" },
       ]
     },
@@ -32,10 +32,10 @@ const Skills = () => {
       icon: <Palette className="w-7 h-7" />,
       color: "from-purple-400 to-pink-400",
       skills: [
-        { name: "Figma", level: 80, icon: "🎨" },
-        { name: "Adobe XD", level: 75, icon: "📐" },
-        { name: "Prototyping", level: 70, icon: "🔧" },
-        { name: "User Research", level: 80, icon: "🔍" },
+        { name: "Figma", level: 80,  },
+        { name: "Adobe XD", level: 75, },
+        { name: "Prototyping", level: 70,  },
+        { name: "User Research", level: 80,  },
       ]
     },
     {
@@ -43,10 +43,10 @@ const Skills = () => {
       icon: <Zap className="w-7 h-7" />,
       color: "from-yellow-500 to-orange-400",
       skills: [
-        { name: "Git", level: 95, icon: "📝" },
-        { name: "VS Code", level: 98, icon: "💻" },
-        { name: "Webpack", level: 80, icon: "📦" },
-        { name: "Postman", level: 90, icon: "🧪" },
+        { name: "Git", level: 95,  },
+        { name: "VS Code", level: 98,  },
+        { name: "Webpack", level: 80, },
+        { name: "Postman", level: 90,  },
         // { name: "Agile", level: 90, icon: "🏃" },
       ]
     }
