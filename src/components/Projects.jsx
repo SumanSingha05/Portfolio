@@ -21,8 +21,8 @@ const Projects = () => {
       image: "/project1.png",
       category: "design",
       technologies: ["React", "Tailwind", "Framer Motion"],
-      liveUrl: "#",
-      githubUrl: "#",
+      liveUrl: "https://portfolio-delta-sage-97.vercel.app/",
+      githubUrl: "https://github.com/SumanSingha05/Portfolio",
       featured: true,
     },
     {
@@ -54,7 +54,7 @@ const Projects = () => {
       category: "web",
       image: "/project3.png",
       technologies: ["React", "Firebase", "Tailwind"],
-      liveUrl: "#",
+      liveUrl: "https://link-aid.vercel.app/",
       githubUrl: "https://github.com/SumanSingha05/LinkAid",
       featured: false,
       // rating: 4
@@ -66,15 +66,15 @@ const Projects = () => {
       image: "/project4.png",
       category: "web",
       technologies: ["React", "React Redux", "Tailwind CSS", "Appwrite"],
-      liveUrl: "#",
+      liveUrl: "https://blog-website-omega-lilac.vercel.app/",
       githubUrl: "https://github.com/SumanSingha05/Blog-Website",
       featured: false,
       rating: 5
     }
   ]
 
-  const filteredProjects = activeFilter === 'all' 
-    ? projects 
+  const filteredProjects = activeFilter === 'all'
+    ? projects
     : projects.filter(project => project.category === activeFilter)
 
   return (
@@ -90,7 +90,7 @@ const Projects = () => {
             <span className="gradient-text text-shadow-strong">My Projects</span>
           </h2>
           <p className="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
-            Here are some of the <span className="text-blue-400 font-semibold">amazing projects</span> I've worked on. 
+            Here are some of the <span className="text-blue-400 font-semibold">amazing projects</span> I've worked on.
             Each one solves a real world problem and provides a <span className="text-purple-400 font-semibold">User friendly easy digital solution of it</span>.
           </p>
         </motion.div>
@@ -109,11 +109,10 @@ const Projects = () => {
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => setActiveFilter(filter.id)}
-              className={`px-8 py-4 rounded-xl font-bold transition-all duration-500 flex items-center space-x-2 ${
-                activeFilter === filter.id
-                  ? 'bg-gradient-to-r from-blue-500 via-purple-600 to-pink-600 text-white shadow-2xl glow-effect'
-                  : 'glass-effect text-gray-300 hover:text-white hover:bg-white/10 shimmer-effect'
-              }`}
+              className={`px-8 py-4 rounded-xl font-bold transition-all duration-500 flex items-center space-x-2 ${activeFilter === filter.id
+                ? 'bg-gradient-to-r from-blue-500 via-purple-600 to-pink-600 text-white shadow-2xl glow-effect'
+                : 'glass-effect text-gray-300 hover:text-white hover:bg-white/10 shimmer-effect'
+                }`}
             >
               {filter.icon}
               <span>{filter.name}</span>
@@ -186,7 +185,7 @@ const Projects = () => {
                         </div>
                       </div>
                       <p className="text-gray-400 text-sm leading-relaxed">{project.description}</p>
-                     
+
                       {/* Technologies */}
                       <div className="flex flex-wrap gap-2">
                         {project.technologies.map((tech) => (
