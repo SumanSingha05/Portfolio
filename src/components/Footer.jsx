@@ -57,7 +57,7 @@ const Footer = () => {
                   { icon: <Github className="w-6 h-6" />, href: "https://github.com/SumanSingha05", label: "GitHub" },
                   { icon: <Linkedin className="w-6 h-6" />, href: "https://www.linkedin.com/in/suman-singha-72b6a2273", label: "LinkedIn" },
                   { icon: <Twitter className="w-6 h-6" />, href: "https://x.com/SumanSingha24", label: "Twitter" },
-                  { icon: <Mail className="w-6 h-6" />, href: "mailto:suman.singha@example.com", label: "Email" },
+                  { icon: <Mail className="w-6 h-6" />, href: "mailto:sumansingha8654@gmail.com", label: "Email" },
                 ].map((social, index) => (
                   <motion.a
                     key={social.label}
