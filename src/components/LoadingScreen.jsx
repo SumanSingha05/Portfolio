@@ -26,9 +26,9 @@ const LoadingScreen = ({ isLoading }) => {
             repeat: Infinity,
             ease: "easeInOut"
           }}
-                      className="absolute top-20 left-20 w-96 h-96 bg-gradient-to-r from-slate-400/20 via-gray-300/20 to-slate-200/20 rounded-full blur-3xl"
+          className="absolute top-20 left-20 w-96 h-96 bg-gradient-to-r from-slate-400/20 via-gray-300/20 to-slate-200/20 rounded-full blur-3xl"
         />
-        
+
         <motion.div
           animate={{
             scale: [1.2, 1, 1.2],
@@ -41,49 +41,49 @@ const LoadingScreen = ({ isLoading }) => {
             repeat: Infinity,
             ease: "easeInOut"
           }}
-                      className="absolute bottom-20 right-20 w-[500px] h-[500px] bg-gradient-to-r from-gray-300/20 via-slate-200/20 to-slate-400/20 rounded-full blur-3xl"
+          className="absolute bottom-20 right-20 w-[500px] h-[500px] bg-gradient-to-r from-gray-300/20 via-slate-200/20 to-slate-400/20 rounded-full blur-3xl"
         />
 
         {/* Floating Particles */}
         <motion.div
-          animate={{ 
-            y: [0, -100, 0], 
+          animate={{
+            y: [0, -100, 0],
             x: [0, 50, 0],
             opacity: [0.5, 1, 0.5]
           }}
-          transition={{ 
-            duration: 4, 
-            repeat: Infinity, 
+          transition={{
+            duration: 4,
+            repeat: Infinity,
             ease: "easeInOut",
             delay: 0
           }}
           className="absolute top-1/4 left-1/4 w-3 h-3 bg-slate-300 rounded-full animate-ping"
         />
-        
+
         <motion.div
-          animate={{ 
-            y: [0, 100, 0], 
+          animate={{
+            y: [0, 100, 0],
             x: [0, -50, 0],
             opacity: [0.5, 1, 0.5]
           }}
-          transition={{ 
-            duration: 6, 
-            repeat: Infinity, 
+          transition={{
+            duration: 6,
+            repeat: Infinity,
             ease: "easeInOut",
             delay: 1
           }}
           className="absolute top-3/4 right-1/3 w-2 h-2 bg-gray-300 rounded-full animate-pulse"
         />
-        
+
         <motion.div
-          animate={{ 
-            y: [0, -80, 0], 
+          animate={{
+            y: [0, -80, 0],
             x: [0, 30, 0],
             opacity: [0.5, 1, 0.5]
           }}
-          transition={{ 
-            duration: 5, 
-            repeat: Infinity, 
+          transition={{
+            duration: 5,
+            repeat: Infinity,
             ease: "easeInOut",
             delay: 2
           }}
@@ -122,7 +122,7 @@ const LoadingScreen = ({ isLoading }) => {
               className="absolute inset-0 border-4 border-slate-400 rounded-2xl opacity-30"
             />
           </motion.div>
-          
+
           <div className="text-center">
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
@@ -138,9 +138,10 @@ const LoadingScreen = ({ isLoading }) => {
               transition={{ delay: 1, duration: 0.8 }}
               className="flex items-center justify-center space-x-2 mt-2"
             >
-              <Sparkles className="w-5 h-5 text-yellow-400 animate-pulse" />
+
               <span className="text-gray-400 text-sm font-medium">Welcome to my portfolio</span>
-              <Zap className="w-5 h-5 text-yellow-400 animate-pulse" />
+              {/* <Zap className="w-5 h-5 text-yellow-400 animate-pulse" /> */}
+              <Sparkles className="w-5 h-5 text-yellow-400 animate-pulse" />
             </motion.div>
           </div>
         </motion.div>
@@ -195,7 +196,7 @@ const LoadingScreen = ({ isLoading }) => {
                 </motion.span>
               </motion.span>
             </div>
-            
+
             <div className="relative h-3 bg-white/10 rounded-full overflow-hidden backdrop-blur-sm">
               <motion.div
                 initial={{ width: 0 }}
@@ -222,13 +223,13 @@ const LoadingScreen = ({ isLoading }) => {
             {[0, 1, 2].map((dot) => (
               <motion.div
                 key={dot}
-                animate={{ 
+                animate={{
                   scale: [1, 1.5, 1],
                   opacity: [0.5, 1, 0.5]
                 }}
-                transition={{ 
-                  duration: 1.5, 
-                  repeat: Infinity, 
+                transition={{
+                  duration: 1.5,
+                  repeat: Infinity,
                   delay: dot * 0.2,
                   ease: "easeInOut"
                 }}
@@ -252,9 +253,9 @@ const LoadingScreen = ({ isLoading }) => {
           >
             Preparing your amazing experience...
           </motion.div> */}
-          
-          
-{/*           
+
+
+        {/*           
         </motion.div> */}
       </div>
 

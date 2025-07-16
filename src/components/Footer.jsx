@@ -36,7 +36,7 @@ const Footer = () => {
               className="lg:col-span-2 space-y-6"
             >
               <div className="flex items-center space-x-3">
-                <div className="relative">
+                {/* <div className="relative">
                   <div className="w-12 h-12 bg-gradient-to-r from-blue-500 via-purple-600 to-pink-600 rounded-2xl flex items-center justify-center glow-effect shadow-xl">
                     <Sparkles className="w-7 h-7 text-white" />
                   </div>
@@ -45,7 +45,7 @@ const Footer = () => {
                     transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
                     className="absolute inset-0 border-2 border-blue-400 rounded-2xl opacity-30"
                   />
-                </div>
+                </div> */}
                 <span className="text-2xl font-black gradient-text">Suman Singha</span>
               </div>
               <p className="text-gray-400 text-lg leading-relaxed max-w-md">
@@ -86,7 +86,7 @@ const Footer = () => {
               className="space-y-6"
             >
               <h3 className="text-xl font-bold text-white text-shadow flex items-center space-x-2">
-                <Zap className="w-5 h-5 text-blue-400" />
+                {/* <Zap className="w-5 h-5 text-blue-400" /> */}
                 <span>Quick Links</span>
               </h3>
               <ul className="space-y-3">
@@ -175,7 +175,7 @@ const Footer = () => {
                   whileTap={{ scale: 0.95 }}
                   className="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-bold rounded-xl hover:from-blue-600 hover:to-purple-700 transition-all duration-300 glow-effect flex items-center justify-center space-x-2"
                 >
-                  
+
                   <span>Subscribe</span>
                   {/* <Sparkles className="w-5 h-5" /> */}
                 </motion.button>
@@ -198,7 +198,7 @@ const Footer = () => {
                 <span className="text-blue-400">•</span>
                 <span>Made with</span>
                 <Heart className="w-4 h-4 text-red-400 animate-pulse" />
-                
+
               </motion.div>
               <motion.button
                 initial={{ opacity: 0, x: 20 }}

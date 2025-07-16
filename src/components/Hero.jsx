@@ -10,31 +10,31 @@ const Hero = () => {
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden particle-bg">
       {/* Enhanced Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
-                  <motion.div
-            animate={{
-              scale: [1, 1.2, 1],
-              rotate: [0, 180, 360],
-            }}
-            transition={{
-              duration: 20,
-              repeat: Infinity,
-              ease: "linear"
-            }}
-            className="absolute top-20 left-20 w-96 h-96 bg-gradient-to-r from-slate-400/20 via-gray-300/20 to-slate-200/20 rounded-full blur-3xl glow-effect"
-          />
-          <motion.div
-            animate={{
-              scale: [1.2, 1, 1.2],
-              rotate: [360, 180, 0],
-            }}
-            transition={{
-              duration: 25,
-              repeat: Infinity,
-              ease: "linear"
-            }}
-            className="absolute bottom-20 right-20 w-[500px] h-[500px] bg-gradient-to-r from-gray-300/20 via-slate-200/20 to-slate-400/20 rounded-full blur-3xl glow-effect"
-          />
-        
+        <motion.div
+          animate={{
+            scale: [1, 1.2, 1],
+            rotate: [0, 180, 360],
+          }}
+          transition={{
+            duration: 20,
+            repeat: Infinity,
+            ease: "linear"
+          }}
+          className="absolute top-20 left-20 w-96 h-96 bg-gradient-to-r from-slate-400/20 via-gray-300/20 to-slate-200/20 rounded-full blur-3xl glow-effect"
+        />
+        <motion.div
+          animate={{
+            scale: [1.2, 1, 1.2],
+            rotate: [360, 180, 0],
+          }}
+          transition={{
+            duration: 25,
+            repeat: Infinity,
+            ease: "linear"
+          }}
+          className="absolute bottom-20 right-20 w-[500px] h-[500px] bg-gradient-to-r from-gray-300/20 via-slate-200/20 to-slate-400/20 rounded-full blur-3xl glow-effect"
+        />
+
         {/* Floating Particles */}
         <motion.div
           animate={{ y: [0, -20, 0], x: [0, 10, 0] }}
@@ -67,9 +67,9 @@ const Hero = () => {
             transition={{ delay: 0.2 }}
             className="text-lg text-slate-300 font-medium flex items-center justify-center space-x-2"
           >
-            
+
             <span>Hello, I'm</span>
-            <Sparkles className="w-5 h-5 text-yellow-400 animate-pulse" />
+            {/* <Sparkles className="w-5 h-5 text-yellow-400 animate-pulse" /> */}
           </motion.div>
 
           {/* Enhanced Name */}
@@ -101,9 +101,9 @@ const Hero = () => {
             transition={{ delay: 0.8, duration: 0.8 }}
             className="text-lg md:text-xl text-gray-400 max-w-4xl mx-auto leading-relaxed"
           >
-            I create <span className="text-slate-300 font-semibold">stunning digital experiences</span> that combine 
-            <span className="text-gray-300 font-semibold"> beautiful design</span> with 
-            <span className="text-slate-200 font-semibold"> powerful functionality</span>. 
+            I create <span className="text-slate-300 font-semibold">stunning digital experiences</span> that combine
+            <span className="text-gray-300 font-semibold"> beautiful design</span> with
+            <span className="text-slate-200 font-semibold"> powerful functionality</span>.
             Passionate about building innovative solutions that make a difference.
           </motion.p>
 
@@ -124,7 +124,7 @@ const Hero = () => {
               <Download className="w-6 h-6" />
               <span>Download CV</span>
             </motion.a>
-            
+
             <motion.button
               whileHover={{ scale: 1.05, y: -5 }}
               whileTap={{ scale: 0.95 }}
