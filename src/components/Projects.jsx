@@ -43,8 +43,8 @@ const Projects = () => {
       image: "/project2.png",
       category: "web",
       technologies: ["React", "Python", "MongoDB", "Tailwind CSS", "AI"],
-      liveUrl: "#",
-      githubUrl: "https://github.com/SumanSingha05/AgroChatbot",
+      liveUrl: "https://agro-geek.vercel.app/",
+      githubUrl: "https://github.com/SumanSingha05/AgroGeek",
       featured: true,
     },
     {
